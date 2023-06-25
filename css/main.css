@@ -108,9 +108,6 @@ header h1 {
   display: none;
 }
 
-header .logo {
-}
-
 header .logo img {
   max-width: 200px;
 }
@@ -122,6 +119,10 @@ nav {
   padding-right: 15px;
 }
 
+.tablet-desktop_menu {
+  display: none;
+}
+
 .sub-menu a {
   color: #fff;
   text-decoration: none;
@@ -129,29 +130,33 @@ nav {
 
 /* Hero Styles */
 .hero {
-  text-align: center;
   background-image: url("../img/green-blue-purple\ gradient.png");
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   font-weight: bold;
-  height: 300px;
+  min-height: 300px;
 }
 
 .hero h2 {
   padding-bottom: 10px;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .hero p {
   text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.33);
   margin-left: 5%;
   margin-right: 5%;
+  font-size: 1.25em;
 }
 
 /* Portfolio Styles */
 .portfolio {
-  margin-top: 50px;
+  margin-top: 75px;
 }
 .portfolio h2 {
   line-height: 1.2;
+  font-size: 1.5em;
   margin-left: auto;
   margin-right: auto;
   width: 125px;
@@ -170,7 +175,7 @@ nav {
   margin-right: 5%;
   display: grid;
   grid-template-columns: 1fr;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 .portfolio-item img {
@@ -182,6 +187,11 @@ nav {
 .portfolio-text {
   justify-self: center;
   max-width: 80%;
+  padding-bottom: 10px;
+}
+
+.portfolio h3 {
+  font-size: 1.25em;
 }
 
 .portfolio-item a {
@@ -195,6 +205,154 @@ nav {
   border-style: solid;
   border-radius: 12px;
   background-color: rgb(113, 190, 207);
+}
+
+/* Skills Styles */
+.skills h2 {
+  font-size: 1.5em;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(247, 132, 172);
+  top: 3086px;
+  width: 125px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-container {
+  background-color: rgb(113, 190, 207);
+  opacity: 0.831;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.skill {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skill img {
+  justify-self: center;
+  padding-top: 15px;
+  padding-top: 15px;
+}
+
+.skill h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.skill h4 {
+  font-weight: bold;
+}
+
+#designer-skills,
+#frontend-skills {
+  border-bottom: #000 2px solid;
+}
+
+/*About Styles*/
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url("../img/green-blue-purple\ gradient.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.about h2 {
+  width: 125px;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(134, 135, 222);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.about #profile-pic {
+  max-width: 200px;
+  justify-self: center;
+}
+
+.about p {
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.33);
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.about #hummingbird {
+  max-width: 200px;
+}
+
+/* CTA Styles */
+main .cta {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 30px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: -65px;
+  margin-top: -45px;
+  z-index: 2;
+  position: sticky;
+}
+
+/* Footer Styles */
+
+footer {
+  background: url(../img/footer-gradient.png);
+  background-size: cover;
+}
+
+footer p {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 25px;
+  padding-top: 75px;
+}
+
+.social-media-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-bottom: 20px;
+}
+
+.social-media-item img {
+  max-width: 100px;
+}
+
+.social-media a {
+  color: #000;
+  padding-bottom: 10px;
+}
+
+footer h4 {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 /* ==========================================================================
@@ -287,6 +445,73 @@ nav {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  /*Tablet Styles*/
+
+  /*Header Styles*/
+  header {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  header .logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  header h1 {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    max-width: 80%;
+    justify-self: center;
+    padding-top: 15px;
+    font-family: "Playfair Display SC", serif;
+  }
+
+  /*Nav Styles*/
+  nav {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+  }
+
+  nav a.button,
+  .sub-menu {
+    display: none;
+  }
+
+  nav .tablet-desktop_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  nav .tablet-desktop_menu a {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  #portfolio-a {
+    padding-right: 15px;
+  }
+
+  nav a:hover {
+    background: -webkit-linear-gradient(#f784ac, #8687de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+  }
+
+  /*Hero Styles*/
+  .hero {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  /* Style adjustments for viewports that meet the condition */
+  /*Tablet Styles*/
 }
 
 @media print,

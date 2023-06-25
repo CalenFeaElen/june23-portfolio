@@ -16,7 +16,12 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css" />
@@ -37,11 +42,17 @@
           </span>
         </a>
         <ul class="sub-menu">
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Mission</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="tablet-desktop_menu">
+          <a href="#portfolio" id="portfolio-a">Portfolio</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
     </header>
     <div class="hero">
@@ -49,7 +60,7 @@
       <p>I am a dedicated FrontEnd Developer and UI/UX Designer, committed to creating exceptional websites with meticulous attention to detail. With a focus on user experience, I aim to make your website not only visually stunning but also easy to navigate. Let's collaborate and bring your online presence to life, ensuring your website captivates your audience and delivers outstanding results. Get in touch today, and let's make your vision a reality!</p>
     </div>
     <main>
-      <div class="portfolio">
+      <div class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
         <div class="portfolio-item">
           <img src="./img/jubilee-thumbnail.png" alt="Portfolio website">
@@ -75,7 +86,7 @@
         <div class="portfolio-item">
           <img src="./img/unplugged.jpg" alt="Website featuring a woman on a walking bridge in the forest">
           <div class="portfolio-text">
-            <h3>Project: Rogue Pickings</h3>
+            <h3>Project: Unplugged</h3>
             <p>This project was coding a responsive three page website from PSDs using HTML and CSS.</p>
             <h3>Skills: HTML, CSS, Flexbox</h3>
             <h3>Tools: Chrome Developer, Github</h3>
@@ -143,7 +154,7 @@
           <a href="https://codesandbox.io/s/monster-math-hooks-umoorq?file=/src/App.js"><button id="live-page">Live Page</button></a>
         </div>
       </div>
-      <div class="skills">
+      <div class="skills" id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
           <div class="skill" id="designer-skills">
@@ -174,32 +185,32 @@
           </div>
         </div>
       </div>
-      <div class="about">
+      <div class="about" id="about">
         <h2>About</h2>
-        <img src="./img/Portfolio Pic Square watercolor circle.png" alt="Headshot of a woman with fair skin, reddish-brown curly hair, and brown eyes. She is slightly smiling.">
+        <img src="./img/Portfolio Pic Square watercolor circle.png" alt="Headshot of a woman with fair skin, reddish-brown curly hair, and brown eyes. She is slightly smiling." id="profile-pic">
         <p>I'm a military spouse of 16 years, originally from the Pacific Northwest but currently residing in Fresno. Having lived all over the world, I've embraced diverse experiences and cultures. While my professional journey has encompassed various roles, I'm now embarking on a career change to pursue a flexible path that enables me to provide for my family. In my free time, I find solace in the joys of reading, crafting, hiking, gardening, and exploring new destinations through travel.</p>
-        <img src="./img/hummingbird.png" alt="A photo of a beautifully colored hummingbird.">
+        <img src="./img/hummingbird.png" alt="A photo of a beautifully colored hummingbird." id="hummingbird">
       </div>
-    </main>
-    <footer>
       <div class="cta">
         <h3>Ready to take your website to the next level?</h3>
       </div>
+    </main>
+    <footer id="contact">
       <p>Let's collaborate and create a stunning online presence that engages your audience and drives results. Contact me today to discuss your project and bring your vision to life!</p>
       <div class="social-media">
-        <div class="social-media item">
+        <div class="social-media-item">
           <a href="https://www.linkedin.com/in/chelsea-day-1554b4108/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn Logo"></a>
           <a href="https://www.linkedin.com/in/chelsea-day-1554b4108/" target="_blank">Let's Connect</a>
         </div>
-        <div class="social-media item">
+        <div class="social-media-item">
           <a href="mailto:calenfeaelen@gmail.com?subject=Website%20Design%20Services" target="_blank"><img src="./img/email-transparent-icon-9.png" alt="Icon for email"></a>
           <a href="mailto:calenfeaelen@gmail.com?subject=Website%20Design%20Services" target="_blank">CalenFeaElen@gmail.com</a>
         </div>
-        <div class="social-media item">
+        <div class="social-media-item">
           <a href="https://calendly.com/chelseacodestheday" target="_blank"><img src="./img/meeting-icon.png" alt="Calendar icon with a clock"></a>
           <a href="https://calendly.com/chelseacodestheday" target="_blank">Ideate with Me</a>
         </div>
-        <div class="social-media item">
+        <div class="social-media-item">
           <a href="https://github.com/CalenFeaElen" target="_blank"><img src="./img/github-black.png" alt="Github's logo"></a>
           <a href="https://github.com/CalenFeaElen" target="_blank">Checkout My Repos</a>
         </div>

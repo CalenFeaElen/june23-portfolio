@@ -96,7 +96,12 @@
   display: block;
   position: relative;
   background: #ed2fd3; /* Old browsers */
-  background: linear-gradient(135deg, #ed2fd3 0%, #001e8e 100%); /* W3C */
+  background: linear-gradient(
+    135deg,
+    #f784ac 0%,
+    #71becf 50%,
+    #8687de 100%
+  ); /* W3C */
 }
 
 .menu {
@@ -151,8 +156,13 @@
   list-style-type: none;
   padding: 10px 20px;
   width: 200px;
-  background: #001e8e; /* Old browsers */
-  background: linear-gradient(to bottom, #001e8e 0%, #ed2fd3 100%); /* W3C */
+  background: #8687de; /* Old browsers */
+  background: linear-gradient(
+    to bottom,
+    #8687de 0%,
+    #71becf 50%,
+    #f784ac 100%
+  ); /* W3C */
   margin: 0;
   position: fixed;
   top: 8px;
