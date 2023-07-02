@@ -32,21 +32,10 @@
 
   <body>
     <!-- Add your site or application content here -->
-    <header>
+    <header id="home">
       <div class="logo"><img src="./img/logo-black.png" alt="Black cat in front of a computer monitor pawing at a computer mouse"></div>
       <h1>Chelsea Codes the Day</h1>
-      <nav >
-        <a href="#" class="button">
-          <span class="menu">
-            <b>menu</b>
-          </span>
-        </a>
-        <ul class="sub-menu">
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav>
         <div class="tablet-desktop_menu">
           <a href="#portfolio" id="portfolio-a">Portfolio</a>
           <a href="#skills">Skills</a>
@@ -200,6 +189,22 @@
     </main>
     <footer id="contact">
       <p>Let's collaborate and create a stunning online presence that engages your audience and drives results. Contact me today to discuss your project and bring your vision to life!</p>
+      <div class="mobile-footer">
+        <div class="mobile-footer-item">
+          <div class="dropup">
+            <button class="dropbtn">Menu</button>
+            <div class="dropup-content">
+              <a href="#home">Home</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#skills">Skills</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
       <div class="social-media">
         <div class="social-media-item">
           <a href="https://www.linkedin.com/in/chelsea-day-1554b4108/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn Logo"></a>
@@ -237,8 +242,10 @@
         $(".button").click(function(){
       $(this).closest("body").toggleClass("active");
      });
+     
       });
     </script>
+ 
     
    
 

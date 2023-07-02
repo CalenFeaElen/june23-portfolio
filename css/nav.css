@@ -1,6 +1,4 @@
-.menu:after,
-.menu:before,
-.menu {
+.menu:after, .menu:before, .menu {
   background: white;
   width: 30px;
   height: 3px;
@@ -84,13 +82,8 @@
   width: 30px;
   display: block;
   position: relative;
-  background: #f784ac; /* Old browsers */
-  background: linear-gradient(
-    135deg,
-    #f784ac 0%,
-    #71becf 50%,
-    #8687de 100%
-  ); /* W3C */
+  background: #ed2fd3; /* Old browsers */
+  background: linear-gradient(135deg, #f784ac 0%, #71becf 50%, #8687de 100%); /* W3C */
 }
 
 .menu {
@@ -142,12 +135,7 @@
   padding: 10px 20px;
   width: 200px;
   background: #8687de; /* Old browsers */
-  background: linear-gradient(
-    to bottom,
-    #8687de 0%,
-    #71becf 50%,
-    #f784ac 100%
-  ); /* W3C */
+  background: linear-gradient(to bottom, #8687de 0%, #71becf 50%, #f784ac 100%); /* W3C */
   margin: 0;
   position: fixed;
   top: 8px;
@@ -184,4 +172,4 @@
   opacity: 1;
   transition: opacity 0.25s ease;
   animation: menu-active-slide 0.25s;
-} /*# sourceMappingURL=nav.css.map */
+}/*# sourceMappingURL=nav.css.map */
