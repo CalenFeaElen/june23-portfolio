@@ -207,6 +207,12 @@ nav {
   background-color: rgb(113, 190, 207);
 }
 
+#live-page:hover {
+  cursor: pointer;
+  color: #fff;
+  background: -webkit-linear-gradient(#f784ac, rgb(113, 190, 207));
+}
+
 /* Skills Styles */
 .skills h2 {
   font-size: 1.5em;
@@ -265,7 +271,8 @@ nav {
 /*About Styles*/
 .about {
   background-image: url("../img/green-blue-purple\ gradient.png");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -560,6 +567,7 @@ footer h4 {
     padding-left: 5px;
   }
   /*About Styles*/
+
   .about h2 {
     font-size: 1.75em;
     margin-bottom: 50px;
@@ -738,6 +746,7 @@ footer h4 {
   }
 
   /* About Styles */
+
   .about-container {
     grid-template-columns: 1fr 2fr;
   }
@@ -746,12 +755,23 @@ footer h4 {
     justify-self: end;
   }
 
+  .about #hummingbird {
+    margin-bottom: -5px;
+  }
+
   /* CTA Styles */
   .cta h3 {
     font-size: 1.5em;
   }
 
   /* Footer Styles */
+  footer {
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   footer p {
     padding-top: 125px;
     font-size: 1.5em;
@@ -761,6 +781,14 @@ footer h4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding-bottom: 100px;
+    padding-top: 50px;
+  }
+
+  footer h4 {
+    height: 100px;
+    padding-bottom: 0;
+    align-self: end;
+    margin-top: 75px;
   }
 }
 
