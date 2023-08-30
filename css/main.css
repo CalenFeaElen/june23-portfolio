@@ -930,7 +930,7 @@ footer h4 {
   }
 
   .portfolio-items {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: start;
   }
 
