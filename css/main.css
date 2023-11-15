@@ -15,6 +15,7 @@ html {
   color: #000;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -234,7 +235,7 @@ nav .menu-items li {
 
 /* Hero Styles */
 .hero {
-  background-image: url("../img/green-blue-purple\ gradient.png");
+  background-image: url("../img-small/green-blue-purple\ gradient.png");
   background-size: cover;
   background-position: center;
   font-weight: bold;
@@ -292,6 +293,7 @@ nav .menu-items li {
   justify-self: center;
   max-width: 80%;
   padding-bottom: 10px;
+  display: grid;
 }
 
 .portfolio h3 {
@@ -300,18 +302,23 @@ nav .menu-items li {
 
 .portfolio-item a {
   text-align: center;
+  text-decoration: none;
+  justify-self: center;
 }
 
-#live-page {
+.live-page {
   font-weight: bold;
   border-width: 1px;
   border-color: rgb(0, 0, 0);
   border-style: solid;
   border-radius: 12px;
   background-color: rgb(113, 190, 207);
+  max-width: 125px;
+  color: #fff;
+  padding: 4px 6px;
 }
 
-#live-page:hover {
+.live-page:hover {
   cursor: pointer;
   color: #fff;
   background: -webkit-linear-gradient(#f784ac, rgb(113, 190, 207));
@@ -374,7 +381,7 @@ nav .menu-items li {
 
 /*About Styles*/
 .about {
-  background-image: url("../img/green-blue-purple\ gradient.png");
+  background-image: url("../img-small/green-blue-purple\ gradient.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -531,7 +538,7 @@ main .cta {
 }
 
 footer {
-  background: url(../img/footer-gradient.png);
+  background: url(../img-small/footer-gradient.png);
   background-size: cover;
 }
 
@@ -741,7 +748,7 @@ footer h4 {
     padding-right: 15px;
   }
 
-  #live-page {
+  .live-page {
     font-size: 1.25em;
   }
 
@@ -811,6 +818,10 @@ footer h4 {
   .portfolio-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .sticky {
+    grid-column: 2 / 3;
   }
   /*Skills Styles*/
 
